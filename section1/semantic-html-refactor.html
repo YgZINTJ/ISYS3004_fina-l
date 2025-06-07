@@ -1,0 +1,42 @@
+<header class="top-section">
+  <!-- Properly using the <header> provides meaningful navigation for screen reader users. (Week 1: semantic HTML landmarks) -->
+  <div class="site-logo">
+    <h1>TechStore Pro</h1> 
+    <!-- Using <h1> improves SEO performance and experience of screen readers understand the topic of a site (Week 1: heading structure for accessibility and SEO) -->
+  </div>
+  <nav class="links" aria-label="Primary Navigation">
+    <!-- <nav> element identifies navigation links; aria-label adds clarity for screen readers (Week 1: navigation landmarks & ARIA usage) -->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cart">Cart (3)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="middle-content">
+  <!-- <main> indicates the primary content of the page, 
+  also allows developer adding accessibility aids (Week 1: semantic layout and assistive structure) -->
+  <article>
+    <h2 class="heading-main">Gaming Laptop - $1,299</h2>
+    <!-- <h2> maintains heading hierarchy and improves semantic structure (Week 1: heading level and document outline) -->
+    <section class="text-block">
+      <p>High-performance gaming laptop with RTX 4060.</p>
+      <p><a href="#buy-now">Click here to buy now!</a></p>
+      <!-- <a> is a interactive tag allows keyboard users
+      and screen readers to click or hit enter in order to be redirected to another page (Week 1: interactive elements for keyboard access) -->
+    </section>
+    <figure class="image-box">
+      <img src="laptop.jpg" alt="High-performance gaming laptop" />
+      <!-- Adding alt text ensures screen reader users to acknowledge what this image is if it's not loaded. 
+      Besides, it makes the image accessible for visually impaired users. (Week 1: non-text content & accessibility) -->
+    </figure>
+    <div class="button-area">
+      <button type="button" class="buy-button">Add to Cart</button>
+      <!-- <button> is changed on behalf of accesibility for keyboard users (Week 1: semantic input elements) -->
+      <button type="button" class="wishlist-btn" aria-label="Add to Wishlist">Like</button>
+      <!-- aria-label indicates screen reader that this emoji is clickable. (Week 10: ARIA techniques for assistive technologies) -->
+      <!-- Having "Like" message instead of an emoji is more accessible for visualiy impaired users. (Week 10: accessible content alternatives) -->
+    </div>
+  </article>
+</main>
